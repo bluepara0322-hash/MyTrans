@@ -1,0 +1,31 @@
+[client]
+toolbarMode = "minimal"
+
+[theme]
+# 한국어·일본어·중국어(간체/번체)가 모두 깨지지 않도록 Noto Sans 계열을 차례로 지정.
+# 이 설정은 폰트 URL을 하나만 받을 수 있어서, 웹폰트 자체는 app.py의 CUSTOM_CSS에서 불러온다.
+font = "Noto Sans KR, Noto Sans JP, Noto Sans SC, Noto Sans TC, sans-serif"
+# 번역 결과(st.code)도 본문과 같은 글꼴로 읽히게 한다
+codeFont = "Noto Sans KR, Noto Sans JP, Noto Sans SC, Noto Sans TC, sans-serif"
+codeFontSize = "1rem"
+baseRadius = "0.75rem"
+headingFontWeights = [700, 600]
+
+[theme.light]
+primaryColor = "#4F46E5"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F4F6FB"
+textColor = "#1F2333"
+borderColor = "#E3E6EF"
+codeBackgroundColor = "#F7F8FC"
+codeTextColor = "#1F2333"
+
+[theme.dark]
+# 버튼의 흰 글자와 대비가 충분하도록 너무 밝지 않은 인디고를 사용
+primaryColor = "#6366F1"
+backgroundColor = "#0F1117"
+secondaryBackgroundColor = "#1A1D29"
+textColor = "#E6E8F0"
+borderColor = "#2C3040"
+codeBackgroundColor = "#161925"
+codeTextColor = "#E6E8F0"
